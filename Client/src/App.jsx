@@ -54,9 +54,6 @@ function App() {
             <Route path='/user/profile' element={<Profile/>}></Route> 
             <Route path='/user/editprofile' element={<EditProfile/>}></Route> 
             <Route path='/change-password' element={<ChangePassword/>}></Route>
-            <Route path='/checkout' element={<CheckoutPage/>}></Route>
-            <Route path='/checkout/success' element={<CheckoutSuccess/>}></Route>
-            <Route path='/checkout/fail' element={<CheckoutFailure/>}></Route>      
             <Route path='/course/displaylecture' element={<Displaylectures/>}></Route>
             <Route path='/course/edit' element={<EditCourse/>}></Route>
           </Route>

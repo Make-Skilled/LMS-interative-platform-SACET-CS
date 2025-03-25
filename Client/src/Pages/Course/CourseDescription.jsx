@@ -46,19 +46,15 @@ function CourseDescripition() {
                             </div>
                         </div>
 
-                        <div className=" space-y-3  text-xl">
-                                <p className=" text-yellow-500 "> Course description:   </p>
-                                <p className=" lg:h-60">{state?.description}</p>
-                                {role==="ADMIN"||data?.subscription?.status=== "active"?(
-                                    <button onClick={()=>navigate("/course/displaylecture", {state:{...state}})} className=" bg-yellow-600 text-xl rounded-md font-bold px-5 py-3 w-full hover:bg-yellow-500 transition-all ease-in-out duration-300">
-                                        Watch lectures
-                                    </button>
-                                ):(
-                                    <button onClick={()=>navigate("/checkout")} className=" bg-yellow-600 text-xl rounded-md font-bold px-5 py-3 w-full hover:bg-yellow-500 transition-all ease-in-out duration-300">
-                                        Subscribe
-                                    </button>
-                                )
-                                }
+                        <div className="space-y-3 text-xl">
+                            <p className="text-yellow-500">Course description:</p>
+                            <p className="lg:h-60">{state?.description}</p>
+                            <button 
+                                onClick={() => navigate("/course/displaylecture", {state:{...state}})} 
+                                className="bg-yellow-600 text-xl rounded-md font-bold px-5 py-3 w-full hover:bg-yellow-500 transition-all ease-in-out duration-300"
+                            >
+                                Watch lectures
+                            </button>
                         </div>
                         
                     </div>
